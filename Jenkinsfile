@@ -7,7 +7,7 @@ pipeline {
         stage('Build') { 
             steps { 
                 echo 'this is build'
-                python '/var/lib/jenkins/workspace/TestNew/dbchk.py'
+                
 		sh "/usr/bin/python /var/lib/jenkins/workspace/TestNew/dbchk.py"
             }
         }
